@@ -78,7 +78,7 @@
 
 
   .has-bg-img {
-    background: url('/starter-code/assets/shared/desktop/bg-pattern-circle.svg') center top;
+    background: url('/assets/shared/desktop/bg-pattern-circle.svg') center top;
     background-size: 55%;
     background-repeat: no-repeat;
     background-position: 40rem -25rem;
@@ -86,7 +86,7 @@
   }
 
   .bg-img-brands {
-    background: url('/starter-code/assets/shared/desktop/bg-pattern-circle.svg') left bottom;
+    background: url('/assets/shared/desktop/bg-pattern-circle.svg') left bottom;
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: -10rem -12rem;
@@ -94,7 +94,7 @@
   }
 
   .bg-img-simple {
-    background: url('/starter-code/assets/shared/desktop/bg-pattern-circle.svg') center center;
+    background: url('/assets/shared/desktop/bg-pattern-circle.svg') center center;
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: 55rem 0rem;

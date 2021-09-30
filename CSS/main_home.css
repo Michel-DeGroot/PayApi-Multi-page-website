@@ -26,7 +26,7 @@
 }
 
 .has-bg-img {
-    background: url("/starter-code/assets/shared/desktop/bg-pattern-circle.svg") center;
+    background: url("/assets/shared/desktop/bg-pattern-circle.svg") center;
     background-size: 200%;
     background-repeat: no-repeat;
     background-position: 50% -30rem;
