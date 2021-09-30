@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Design preview for the PayAPI multi-page website coding challenge](./preview.jpg)
 
 Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
@@ -61,7 +61,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
-This project's goal was to work on my HTML, CSS & JavaScript skills
+This project's goal was to hone my HTML, CSS & JavaScript skills
 
 To see how you can add code snippets, see below:
 
