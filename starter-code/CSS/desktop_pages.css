@@ -5,32 +5,28 @@
     background-color: #edf3f8;
     font-size: 0.9em;
     max-width: 40rem;
-  margin: 0 auto;
-}
+    margin: 0 auto;
+  }
 
   .content-width {
     /* padding: 0 3rem 0 3rem; */
     text-align: left;
   }
 
+  .has-text-centered-mobile {
+    padding: 0 0 0 0;
+  }
+
   .p-body {
     line-height: 2em;
     color: white;
     padding: 0rem;
-}
+  }
 
   .p-easy {
     line-height: 2em;
     width: 80%;
   }
-
-  .hero-button {
-    margin-top: -40px;
-    margin-left: 200px;
-    display: inline-block;
-    max-width: 100px;
-  }
-
 
   .top-phone {
     width: 80%;
@@ -53,6 +49,7 @@
 
   .columns {
     column-gap: 2rem;
+
     .column {
       text-align: left;
       margin-left: 6rem;
@@ -60,36 +57,32 @@
     }
   }
 
-  .column {
-    text-align: left;
-    margin-left: 6rem;
-    margin-right: 2.5rem;
-  }
-
   .table {
     display: flex;
-    justify-content:flex-start
-    align-content:flex-start;
-    align-items:flex-start;
+    justify-content: flex-start align-content:flex-start;
+    align-items: flex-start;
     background-color: transparent;
     margin-left: 0px;
-}
-
-.button {
-  margin-left: 0px;
-}
-
-
-  .input {
-    width: 100%;
   }
+
+  .button {
+    margin-left: 0px;
+  }
+
+  .hero-button {
+    margin-top: -40px;
+    margin-right: 3rem;
+    display: inline-block;
+    max-width: 100px;
+  }
+
 
   .has-bg-img {
     background: url('/starter-code/assets/shared/desktop/bg-pattern-circle.svg') center top;
     background-size: 55%;
     background-repeat: no-repeat;
     background-position: 40rem -25rem;
-    
+
   }
 
   .bg-img-brands {
@@ -116,9 +109,22 @@
     align-items: center;
   }
 
-  .input {
-    width: 60%;
+
+
+  .ready {
+    margin-left: 0px;
+    margin-right: 0px;
+    justify-content: space-between;
   }
+
+  .input {
+    width: 100%;
+    margin-left: -3rem;
+  }
+
+  /* .input-bottom {
+  width: 100%;
+} */
 
   .brands {
     display: flex;
@@ -144,22 +150,20 @@
 
   .features-text {
     text-align: left;
-}
+  }
 
-.ready {
-  margin-left: 0px;
-}
+  footer {
+    justify-content: center;
+    background-color: #1b262f;
+    color: #ffffff;
+    margin-left: 0rem;
+    margin: auto;
+    padding: 2rem;
+  }
 
-footer {
-  background-color: #1b262f;
-  color: #ffffff;
-  margin-left: 0rem;
-  padding: 2rem;
-}
-
-.menu {
-  display: inline-flex;
-  background-color: transparent;
-}
+  .menu {
+    display: inline-flex;
+    background-color: transparent;
+  }
 
 }
