@@ -1,263 +1,331 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>PayAPI Website Dummy</title>
-  <link rel="stylesheet" href="/node_modules/bulma/css/bulma.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="./CSS/main_pages.css">
-  <link rel="stylesheet" href="./CSS/tablet_pages.css">
-  <link rel="stylesheet" href="./CSS/desktop_pages.css">
-  <script defer src="./index.js"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
 
-</head>
+    <title>PayAPI Website Challenge</title>
 
-<body class="container is-max-widescreen pr">
-  <section class="section has-bg-img" id="hero">
-    <div class="content-width">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./app/css/main.css">
 
-      <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-          <a class="navbar-item" href="#">
-            <img src="./assets/shared/desktop/logo.svg">
-          </a>
+  </head>
 
-          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
-            data-target="navbarBasicExample">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
+  <body>
+    <!-- Header -->
+    <header class="header">
 
-        <div id="navbarBasicExample" class="navbar-menu">
-          <div class="navbar-start">
-            <a class="navbar-item">
-              Pricing
-            </a>
+      <!-- Wrapper -->
+      <div class="wrapper">
 
-            <a class="navbar-item">
-              About
-            </a>
+        <!-- Navigation -->
+        <nav class="nav">
 
-            <a class="navbar-item">
-              Contact
-            </a>
-          </div>
+          <a href="./index.html" class="nav__logo"><img src="./assets/shared/desktop/logo.svg" alt="logo"></a>
 
-          <div class="navbar-end">
-            <div class="navbar-item">
-              <div class="buttons">
-                <a class="button is-danger is-rounded px-5">
-                  <strong>Schedule a Demo</strong>
-                </a>
+          <ul class="nav__list" id="nav-menu">
+            <button class="nav__toggle nav__toggle--close" id="nav-close"></button>
+            <li class="nav__item"><a href="./pricing.html" class="nav__link">Pricing</a></li>
+            <li class="nav__item"><a href="./about.html" class="nav__link">About</a></li>
+            <li class="nav__item"><a href="./contact.html" class="nav__link">Contact</a></li>
+            <a class="btn btn--primary btn--mobile">Schedule a Demo</a>
+          </ul>
 
+          
+          <button class="nav__toggle nav__toggle--open" id="nav-open"></button>
+          
+        </nav>
+
+        <a class="btn btn--primary btn--desktop">Schedule a Demo</a>
+
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+
+      <!-- Section - Tier -->
+      <section class="tier">
+
+        <!-- Wrapper -->
+        <div class="wrapper">
+
+          <h1 class="heading heading--1 heading--1-small">Pricing</h1>
+
+          <!-- Tier List -->
+          <ul class="tier__list">
+
+            <!-- Tier Item -->
+            <li class="tier__item">
+              <h3 class="heading heading--3 heading--3-large">Free Plan</h3>
+              <p class="paragraph">
+                Build and test using our core set of products with up to 100 API requests
+              </p>
+              <div class="tier__pricing"><span class="price">$0.00</span></div>
+              <hr>
+              <ul class="tier__features">
+                <li class="tier__feature tier__feature--included">
+                  <div class="space"></div>
+                  <div>
+                    <svg width="14" height="11" xmlns="http://www.w3.org/2000/svg"><path d="M1 5.718L4.893 9.56l8.107-8" stroke="#BA4270" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+                    <span class="feature">Transactions</span>
+                  </div>
+                  <div class="space"></div>
+                </li>
+                <li class="tier__feature tier__feature--included">
+                  <div class="space"></div>
+                  <div>
+                    <svg width="14" height="11" xmlns="http://www.w3.org/2000/svg"><path d="M1 5.718L4.893 9.56l8.107-8" stroke="#BA4270" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+                    <span class="feature">Auth</span>
+                  </div>
+                  <div class="space"></div>
+                </li>
+                <li class="tier__feature tier__feature--included">
+                  <div class="space"></div>
+                  <div>
+                    <svg width="14" height="11" xmlns="http://www.w3.org/2000/svg"><path d="M1 5.718L4.893 9.56l8.107-8" stroke="#BA4270" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+                    <span class="feature">Identity</span>
+                  </div>
+                  <div class="space"></div>
+                </li>
+                <li class="tier__feature tier__feature--not-included">
+                  <div class="space"></div>
+                  <div>
+                    <svg width="14" height="11" xmlns="http://www.w3.org/2000/svg"><path d="M1 5.718L4.893 9.56l8.107-8" stroke="#BA4270" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+                    <span class="feature">Investments</span>
+                  </div>
+                  <div class="space"></div>
+                </li>
+                <li class="tier__feature tier__feature--not-included">
+                  <div class="space"></div>
+                  <div>
+                    <svg width="14" height="11" xmlns="http://www.w3.org/2000/svg"><path d="M1 5.718L4.893 9.56l8.107-8" stroke="#BA4270" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+                    <span class="feature">Assets</span>
+                  </div>
+                  <div class="space"></div>
+                </li>
+                <li class="tier__feature tier__feature--not-included">
+                  <div class="space"></div>
+                  <div>
+                    <svg width="14" height="11" xmlns="http://www.w3.org/2000/svg"><path d="M1 5.718L4.893 9.56l8.107-8" stroke="#BA4270" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+                    <span class="feature">Liabilities</span>
+                  </div>
+                  <div class="space"></div>
+                </li>
+                <li class="tier__feature tier__feature--not-included">
+                  <div class="space"></div>
+                  <div>
+                    <svg width="14" height="11" xmlns="http://www.w3.org/2000/svg"><path d="M1 5.718L4.893 9.56l8.107-8" stroke="#BA4270" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+                    <span class="feature">Income</span>
+                  </div>
+                  <div class="space"></div>
+                </li>
+              </ul>
+              <hr>
+              <div class="cta-wrapper">
+                <button class="btn btn--secondary btn--dark">Request Access</button>
               </div>
-            </div>
-          </div>
-        </div>
-      </nav>
-      <!-- Hero content -->
-      <div class="hero-content">
-        <div class="hero-start">
-          <h1 class="title is-1 is-size-2-mobile  mt-6  has-text-centered-mobile">Pricing</h1>
-        </div>
-      </div>
-  </section>
-<!-- Plans Section -->
-  <section class="column-section">
-    <div class="columns is is-gapless">
-      <div class="column">
-        <h2 class="title is-3 has-text-centered-mobile">Free Plan</h2>
-        <p class="has-text-centered-mobile">Build and test using our core set of products with up to 100 API requests</p> 
-        <h2 class="title is-1 has-text-centered-mobile mt-4">$0.00</h2>
-        <hr>
-        <table class="table">
-          <tbody>
-            <tr>
-              <td><img src="/starter-code/assets/shared/desktop/icon-check.svg" alt="Check mark"></td>
-              <td>Transactions</td>
-            </tr>
-            <tr>
-              <td><img src="/starter-code/assets/shared/desktop/icon-check.svg" alt="Check mark"></td>
-              <td>Auth</td>
-            </tr>
-            <tr>
-              <td><img src="/starter-code/assets/shared/desktop/icon-check.svg" alt="Check mark"></td>
-              <td>Identity</td>
-            </tr>
-            <tr>
-              <td> </td>
-              <td>Investments</td>
-            </tr>
-            <tr>
-              <td> </td>
-              <td>Assets</td>
-            </tr>
-            <tr>
-              <td> </td>
-              <td>Liabilities</td>
-            </tr>
-            <tr>
-              <td> </td>
-              <td>Income</td>
-            </tr>
-          </tbody>
-        </table>
-  <hr class="mb-5">
-        <div class="buttons">
-          <a class="button is-rounded px-5 mb-6 center-aligned is-centered">
-            <strong>Request Access</strong>
-          </a>
-        </div>
-        
-      </div>
+            </li> <!-- // Tier Item -->
 
-      <div class="column">
-        <h2 class="title is-3 has-text-centered-mobile">Basic Plan</h2>
-        <p class="has-text-centered-mobile">Launch your project with unlimited requests and no contractual minimums</p> 
-        <h2 class="title is-1 has-text-centered-mobile mt-4">$249.00</h2>
-        <hr>
-        <table class="table">
-          <tbody>
-            <tr>
-              <td><img src="/starter-code/assets/shared/desktop/icon-check.svg" alt="Check mark"></td>
-              <td>Transactions</td>
-            </tr>
-            <tr>
-              <td><img src="/starter-code/assets/shared/desktop/icon-check.svg" alt="Check mark"></td>
-              <td>Auth</td>
-            </tr>
-            <tr>
-              <td><img src="/starter-code/assets/shared/desktop/icon-check.svg" alt="Check mark"></td>
-              <td>Identity</td>
-            </tr>
-            <tr>
-              <td><img src="/starter-code/assets/shared/desktop/icon-check.svg" alt="Check mark"></td>
-              <td>Investments</td>
-            </tr>
-            <tr>
-              <td><img src="/starter-code/assets/shared/desktop/icon-check.svg" alt="Check mark"></td>
-              <td>Assets</td>
-            </tr>
-            <tr>
-              <td> </td>
-              <td>Liabilities</td>
-            </tr>
-            <tr>
-              <td> </td>
-              <td>Income</td>
-            </tr>
-          </tbody>
-        </table>
-        <hr class="mb-5">
-        <div class="buttons">
-          <a class="button is-rounded px-5 mb-6 center-aligned is-centered">
-            <strong>Request Access</strong>
-          </a>
+            <!-- Tier Item -->
+            <li class="tier__item">
+              <h3 class="heading heading--3 heading--3-large">Basic Plan</h3>
+              <p class="paragraph">
+                Launch your project with unlimited requests and no contractual minimums
+              </p>
+              <div class="tier__pricing"><span class="price">$249.00</span></div>
+              <hr>
+              <ul class="tier__features">
+                <li class="tier__feature tier__feature--included">
+                  <div class="space"></div>
+                  <div>
+                    <svg width="14" height="11" xmlns="http://www.w3.org/2000/svg"><path d="M1 5.718L4.893 9.56l8.107-8" stroke="#BA4270" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+                    <span class="feature">Transactions</span>
+                  </div>
+                  <div class="space"></div>
+                </li>
+                <li class="tier__feature tier__feature--included">
+                  <div class="space"></div>
+                  <div>
+                    <svg width="14" height="11" xmlns="http://www.w3.org/2000/svg"><path d="M1 5.718L4.893 9.56l8.107-8" stroke="#BA4270" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+                    <span class="feature">Auth</span>
+                  </div>
+                  <div class="space"></div>
+                </li>
+                <li class="tier__feature tier__feature--included">
+                  <div class="space"></div>
+                  <div>
+                    <svg width="14" height="11" xmlns="http://www.w3.org/2000/svg"><path d="M1 5.718L4.893 9.56l8.107-8" stroke="#BA4270" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+                    <span class="feature">Identity</span>
+                  </div>
+                  <div class="space"></div>
+                </li>
+                <li class="tier__feature tier__feature--included">
+                  <div class="space"></div>
+                  <div>
+                    <svg width="14" height="11" xmlns="http://www.w3.org/2000/svg"><path d="M1 5.718L4.893 9.56l8.107-8" stroke="#BA4270" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+                    <span class="feature">Investments</span>
+                  </div>
+                  <div class="space"></div>
+                </li>
+                <li class="tier__feature tier__feature--included">
+                  <div class="space"></div>
+                  <div>
+                    <svg width="14" height="11" xmlns="http://www.w3.org/2000/svg"><path d="M1 5.718L4.893 9.56l8.107-8" stroke="#BA4270" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+                    <span class="feature">Assets</span>
+                  </div>
+                  <div class="space"></div>
+                </li>
+                <li class="tier__feature tier__feature--not-included">
+                  <div class="space"></div>
+                  <div>
+                    <svg width="14" height="11" xmlns="http://www.w3.org/2000/svg"><path d="M1 5.718L4.893 9.56l8.107-8" stroke="#BA4270" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+                    <span class="feature">Liabilities</span>
+                  </div>
+                  <div class="space"></div>
+                </li>
+                <li class="tier__feature tier__feature--not-included">
+                  <div class="space"></div>
+                  <div>
+                    <svg width="14" height="11" xmlns="http://www.w3.org/2000/svg"><path d="M1 5.718L4.893 9.56l8.107-8" stroke="#BA4270" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+                    <span class="feature">Income</span>
+                  </div>
+                  <div class="space"></div>
+                </li>
+              </ul>
+              <hr>
+              <div class="cta-wrapper">
+                <button class="btn btn--secondary btn--dark">Request Access</button>
+              </div>
+            </li> <!-- // Tier Item -->
+
+            <!-- Tier Item -->
+            <li class="tier__item">
+              <h3 class="heading heading--3 heading--3-large">Premium Plan</h3>
+              <p class="paragraph">
+                Get tailored solutions, volume pricing, and dedicated support for your team
+              </p>
+              <div class="tier__pricing"><span class="price">$499.00</span></div>
+              <hr>
+              <ul class="tier__features">
+                <li class="tier__feature tier__feature--included">
+                  <div class="space"></div>
+                  <div>
+                    <svg width="14" height="11" xmlns="http://www.w3.org/2000/svg"><path d="M1 5.718L4.893 9.56l8.107-8" stroke="#BA4270" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+                    <span class="feature">Transactions</span>
+                  </div>
+                  <div class="space"></div>
+                </li>
+                <li class="tier__feature tier__feature--included">
+                  <div class="space"></div>
+                  <div>
+                    <svg width="14" height="11" xmlns="http://www.w3.org/2000/svg"><path d="M1 5.718L4.893 9.56l8.107-8" stroke="#BA4270" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+                    <span class="feature">Auth</span>
+                  </div>
+                  <div class="space"></div>
+                </li>
+                <li class="tier__feature tier__feature--included">
+                  <div class="space"></div>
+                  <div>
+                    <svg width="14" height="11" xmlns="http://www.w3.org/2000/svg"><path d="M1 5.718L4.893 9.56l8.107-8" stroke="#BA4270" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+                    <span class="feature">Identity</span>
+                  </div>
+                  <div class="space"></div>
+                </li>
+                <li class="tier__feature tier__feature--included">
+                  <div class="space"></div>
+                  <div>
+                    <svg width="14" height="11" xmlns="http://www.w3.org/2000/svg"><path d="M1 5.718L4.893 9.56l8.107-8" stroke="#BA4270" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+                    <span class="feature">Investments</span>
+                  </div>
+                  <div class="space"></div>
+                </li>
+                <li class="tier__feature tier__feature--included">
+                  <div class="space"></div>
+                  <div>
+                    <svg width="14" height="11" xmlns="http://www.w3.org/2000/svg"><path d="M1 5.718L4.893 9.56l8.107-8" stroke="#BA4270" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+                    <span class="feature">Assets</span>
+                  </div>
+                  <div class="space"></div>
+                </li>
+                <li class="tier__feature tier__feature--included">
+                  <div class="space"></div>
+                  <div>
+                    <svg width="14" height="11" xmlns="http://www.w3.org/2000/svg"><path d="M1 5.718L4.893 9.56l8.107-8" stroke="#BA4270" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+                    <span class="feature">Liabilities</span>
+                  </div>
+                  <div class="space"></div>
+                </li>
+                <li class="tier__feature tier__feature--included">
+                  <div class="space"></div>
+                  <div>
+                    <svg width="14" height="11" xmlns="http://www.w3.org/2000/svg"><path d="M1 5.718L4.893 9.56l8.107-8" stroke="#BA4270" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+                    <span class="feature">Income</span>
+                  </div>
+                  <div class="space"></div>
+                </li>
+              </ul>
+              <hr>
+              <div class="cta-wrapper">
+                <button class="btn btn--secondary btn--dark">Request Access</button>
+              </div>
+            </li> <!-- // Tier Item -->
+            
+          </ul> <!-- // Tier List -->
 
         </div>
-      </div>
-      <div class="column">
-        <h2 class="title is-3 has-text-centered-mobile">Premium Plan</h2>
-        <p class="has-text-centered-mobile">Get tailored solutions, volume pricing, and dedicated support for your team</p> 
-        <h2 class="title is-1 has-text-centered-mobile mt-4">$499.00</h2>
-        <hr>
-        <table class="table">
-          <tbody>
-            <tr>
-              <td><img src="/starter-code/assets/shared/desktop/icon-check.svg" alt="Check mark"></td>
-              <td>Transactions</td>
-            </tr>
-            <tr>
-              <td><img src="/starter-code/assets/shared/desktop/icon-check.svg" alt="Check mark"></td>
-              <td>Auth</td>
-            </tr>
-            <tr>
-              <td><img src="/starter-code/assets/shared/desktop/icon-check.svg" alt="Check mark"></td>
-              <td>Identity</td>
-            </tr>
-            <tr>
-              <td><img src="/starter-code/assets/shared/desktop/icon-check.svg" alt="Check mark"></td>
-              <td>Investments</td>
-            </tr>
-            <tr>
-              <td><img src="/starter-code/assets/shared/desktop/icon-check.svg" alt="Check mark"></td>
-              <td>Assets</td>
-            </tr>
-            <tr>
-              <td><img src="/starter-code/assets/shared/desktop/icon-check.svg" alt="Check mark"></td>
-              <td>Liabilities</td>
-            </tr>
-            <tr>
-              <td><img src="/starter-code/assets/shared/desktop/icon-check.svg" alt="Check mark"></td>
-              <td>Income</td>
-            </tr>
-          </tbody>
-        </table>
-        <hr class="mb-5">
-        <div class="buttons">
-          <a class="button is-rounded px-5 center-aligned is-centered">
-            <strong>Request Access</strong>
-          </a>
+      </section> <!-- // Section - Tier -->
+
+      <!-- Section - CTA -->
+      <section class="cta-box">
+
+        <!-- Wrapper -->
+        <div class="wrapper">
+
+          <h2 class="heading heading--2">Ready to start?</h2>
+          <form action="" class="form form--cta">
+            <input type="email" name="" id="" placeholder="Enter email address">
+            <input type="submit" value="Schedule a Demo" class="btn btn--primary">
+          </form>
 
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
+    </main>
 
-<!-- Ready to Start section -->
-  <section class="ready hero py-6">
-    <div class="columns">
-      <div class="column">
-        <h1 class="title is-3 has-text-centered-mobile">Ready to start?</h1>
-      </div>
-      <div class="column input-bottom">
-        <input class="input is-rounded" type="text" placeholder="Enter your email">
-        <button class="button is-rounded is-danger px-5 hero-button is-pulled-right">schedule a demo</button>
-      </div>
-    </div>
+    <!-- Footer -->
+    <footer class="footer">
+      
+      <!-- Wrapper -->
+      <div class="wrapper">
 
-  </section>
-<!-- Footer Section -->
-  <footer class="section py-6">
-    <nav class="navbar is-transparent is-black" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="#">
-          <img class="footer-logo" src="./assets/shared/desktop/logo.svg">
-        </a>
+        <!-- Navigation -->
+        <nav class="nav">
+
+          <a href="./index.html" class="nav__logo"><img src="./assets/shared/desktop/logo-white.svg" alt="logo"></a>
+
+          <ul class="nav__list">
+            <li class="nav__item"><a href="./pricing.html" class="nav__link">Pricing</a></li>
+            <li class="nav__item"><a href="./about.html" class="nav__link">About</a></li>
+            <li class="nav__item"><a href="./contact.html" class="nav__link">Contact</a></li>
+          </ul>
+
+        </nav>
+
+        <!-- Social Links-->
+        <ul class="social__list">
+          <li class="social__item"><a href="#" class="social__link"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z" fill="#FBFCFE" fill-rule="nonzero"/></svg></a></li>
+          <li class="social__item"><a href="#" class="social__link"><svg width="24" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z" fill="#FBFCFE" fill-rule="nonzero"/></svg></a></li>
+          <li class="social__item"><a href="#" class="social__link"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M21.6 0H2.4C1.08 0 0 1.08 0 2.4v19.2C0 22.92 1.08 24 2.4 24h19.2c1.32 0 2.4-1.08 2.4-2.4V2.4C24 1.08 22.92 0 21.6 0zM7.2 20.4H3.6V9.6h3.6v10.8zM5.4 7.56c-1.2 0-2.16-.96-2.16-2.16 0-1.2.96-2.16 2.16-2.16 1.2 0 2.16.96 2.16 2.16 0 1.2-.96 2.16-2.16 2.16zm15 12.84h-3.6v-6.36c0-.96-.84-1.8-1.8-1.8-.96 0-1.8.84-1.8 1.8v6.36H9.6V9.6h3.6v1.44c.6-.96 1.92-1.68 3-1.68 2.28 0 4.2 1.92 4.2 4.2v6.84z" fill="#FFF" fill-rule="nonzero"/></svg></a></li>
+        </ul>
+
       </div>
-  
-      <div class="navbar-menu is-active">
-        <div class="navbar-start">
-          <a class="navbar-item">
-            Pricing
-          </a>
-  
-          <a class="navbar-item">
-            About
-          </a>
-  
-          <a class="navbar-item">
-            Contact
-          </a>
-        </div>
-  
-        <div class="navbar-end">
-          <div class="navbar-item is-pulled-right">
-            <a href="#"><img class="pl-4" src="./assets/shared/desktop/facebook.svg" alt=""></a>
-            <a href="#"><img class="pl-4" src="./assets/shared/desktop/twitter.svg" alt=""></a>
-            <a href="#"><img class="pl-4" src="./assets/shared/desktop/linkedin.svg" alt=""></a>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </footer>
-</body>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./app/js/script.js"></script>
+
+  </body>
 
 </html>

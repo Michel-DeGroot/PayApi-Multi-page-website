@@ -1,0 +1,108 @@
+// ********************
+// Contact Styles
+// ********************
+
+.contact{
+    @include breakpoint-down(small){
+        text-align: center;
+    }
+
+    @include breakpoint-up(large){
+        display: grid;
+        grid-template-areas: "title title"
+                             "form partner";
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 8.2667rem;
+    }
+
+    &::before{
+        content: '';
+        width: 100%;
+        height: 140px;
+        position: absolute;
+        right: 0px;
+        top: -25px;
+        z-index: var(--z-back);
+        background-image: url(../../assets/shared/desktop/bg-pattern-circle.svg);
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-position: 135% bottom;
+
+        @include breakpoint-up(medium){
+            height: 300px;
+            background-size: 80%;
+            background-position: 330% bottom;
+        }
+
+        @include breakpoint-up(large){
+            height: 200px;
+            background-position: 180% bottom;
+        }
+    }
+
+    .wrapper{
+        padding: 1.6rem 1.6rem 2.667rem;
+
+        @include breakpoint-up(medium){
+            padding: 2.5rem 6.467rem 3.33rem;
+        }
+
+        @include breakpoint-up(large){
+            padding: 2.733rem 11rem 3.2rem;
+        }
+    }
+
+    .heading{
+
+        &--1{
+            margin-bottom: 2.667rem;
+            max-width: 48.667rem;
+
+            @include breakpoint-up(medium){
+                margin-bottom: 3.6rem;
+            }
+
+            @include breakpoint-up(large){
+                grid-area: title;
+            }
+        }
+    }
+
+    .form{
+        @include breakpoint-down(medium){
+            margin-bottom: 5.33rem;
+        }
+
+        @include breakpoint-up(large){
+            grid-area: form;
+        }
+    }
+
+    .partners{
+        background-color: initial;
+
+        &::before{
+            display: none;
+        }
+
+        @include breakpoint-up(large){
+            grid-area: partner;
+            display: initial;
+        }
+        
+        .heading{
+            margin-bottom: 2.133rem;
+            max-width: 29.667rem;
+
+            @include breakpoint-up(medium){
+                margin-bottom: 2.667rem;
+            }
+        }
+
+        &__list{
+            @include breakpoint-up(large){
+                margin-left: initial;
+            }
+        }
+    }
+}

@@ -1,0 +1,114 @@
+// ********************
+// Forms
+// ********************
+
+// Text Fields
+
+.form{
+
+    &--cta{
+
+        @include breakpoint-up(medium){
+            display: flex;
+            justify-content: space-between;
+            background-color: var(--color-link-water-white);
+            box-shadow: var(--bxs-btn);
+            width: 100%;
+            max-width: 29.667rem;
+            border-radius: 1.6rem;
+        }
+
+        [type="email"],
+        [type="submit"]{
+            border-radius: 1.6rem;
+            padding: 1rem 1.8rem;
+            
+            @include breakpoint-down(small){
+                display: block;
+                width: 100%;
+            }
+        }
+        
+        > *:not(:last-child){
+            
+            @include breakpoint-down(small){
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    &--contact{
+        > *:not(:last-child){
+            margin-bottom: 1.6rem;
+        }
+        // Button
+        .btn{
+            width: 35%;
+        }
+    }
+
+    &__control{
+        display: flex;
+        flex-direction: column;
+
+        input,
+        textarea{
+            border: none;
+            background: none;
+            border-bottom: 0.0667rem solid var(--color-light-sanjuan-blue);
+
+            &:focus{
+                border-bottom-color: var(--color-sanjuan-blue);
+            }
+
+            &:invalid{
+                position: relative;
+                color: red;
+                border-bottom: 0.0667rem solid red;
+            }
+        }
+
+        small{
+            display: none;
+        }
+    }
+
+    // Checkbox
+    &__checkbox{
+        position: relative;
+        display: flex;
+        align-items: center;
+        text-align: left;
+
+        > input{
+            width: 1.6rem;
+            height: 1.6rem;
+            margin-right: 1.733rem;
+            appearance: none;
+            background-color: var(--color-sanjuan-blue);
+            opacity: .25;
+            cursor: pointer;
+            flex-shrink: 0;
+
+            &:checked{
+                background-color: var(--color-dark-pink);
+                border: none;
+                opacity: initial;
+
+                + span::before{
+                    content: '\2713';
+                    display: block;
+                    text-align: center;
+                    color: var(--color-link-water-white);
+                    position: absolute;
+                    left: .35rem;
+                    top: 25%;
+                }
+            }
+
+            &:disabled{
+                opacity: .05;
+            }
+        }
+    }
+}
