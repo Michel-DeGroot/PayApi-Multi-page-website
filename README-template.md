@@ -45,31 +45,17 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Bulma SASS
+- BEM
+- SASS
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 
 
 ### What I learned
 
-This project's goal was to hone my HTML, CSS & JavaScript skills
+This project's goal was to hone my HTML, CSS, SASS & JavaScript skills
 
-To see how you can add code snippets, see below:
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 

@@ -7,10 +7,10 @@ const title = document.getElementById('title');
 const text = document.getElementById('text');
 
 // Main
-form.addEventListener('submit', e => {
+v , e => {
     e.preventDefault();
 
-    // TODO: call checkInput function
+    // TODO: call checkInput function 
     checkInputs();
 });
 
