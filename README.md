@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://michel-degroot.github.io/payapi-multi-page-website/)
+- Live Site URL: [GIT Hub Page](https://michel-degroot.github.io/payapi-multi-page-website/)
 
 ## My process
 
